@@ -35,7 +35,10 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61563779834031"
+    "61563779834031",
+    "61563779834031",
+    "61566369721724",
+    "61552422054139"
   ],
   "whiteListMode": {
     "enable": false,
@@ -47,7 +50,7 @@
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "nickNameBot": "AyRa",
-  "prefix": "-",
+  "prefix": "+",
   "xnil": "",
   "api": "",
   "api2": "",
@@ -173,8 +176,10 @@
   "whiteListModeThread": {
     "enable": false,
     "whiteListThreadIds": [
-      "7271330272945067",
-      "8006025642851325"
+      "61563779834031",
+      "61566369721724", "61552422054139"
+
+
     ],
     "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
