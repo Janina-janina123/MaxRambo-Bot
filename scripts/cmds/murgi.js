@@ -2,20 +2,20 @@ module.exports.config = {
     name: "murgi",
     version: "1.0",
     role: 1,
-    author: "Mesbah Bb'e",
+    author: "Rambo",
     description: "5 বারের জন্য ক্রমাগত বন্ধুর ট্যাগ ট্যাগ করুন\nসেই ব্যক্তিকে আত্মা কলিং বলা যেতে পারে",
-    category: "nsfw",
+    category: "রেম্বো",
     guide: " please @mention",
     coolDown: 10
 }
 module.exports.onStart = async function({ api, args, Users, event}) {
     var mention = Object.keys(event.mentions)[0];
-    if(!mention) return api.sendMessage("বস খানকির পুলারে একটা মেনশন দে-!!🫂", event.threadID);
+    if(!mention) return api.sendMessage("রেম্বো বস ঐ হালারে একবার মেনসন দেন!!🫂", event.threadID);
  let name =  event.mentions[mention];
     var arraytag = [];
-        arraytag.push({id: mention, tag: name});
+        arraytag.push({id: mention, tag: name});"Rambo"
     var a = function (a) { api.sendMessage(a, event.threadID); }
-a("তোর আলামিন আব্বুর চুদা লো");
+a("তোর রেম্বো আব্বুর চুদা লো");
 setTimeout(() => {a({body:"খানকির বাচ্চা তোর মারে চুদি 🫦।" + " " + name, mentions: arraytag})}, 3000);
 setTimeout(() => {a({body: "খানকির বাচ্চা তোর কচি বোন রে চুদি 💋.." + " " + name, mentions: arraytag})}, 5000);
 setTimeout(() => {a({body: "মাদারচোদ তোর আম্মুর পম পম খানকির পো 🐰" + " " + name, mentions: arraytag})}, 7000);
