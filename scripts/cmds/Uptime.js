@@ -3,7 +3,7 @@
     name: "up",
     aliases: ["up", "upt"],
     version: "1.0",
-    author: "ArYan",
+    author: "Ꮇax~ᴿambo~king࿐☂",
     role: 0,
     shortDescription: {
       en: "Displays the uptime of the bot."
