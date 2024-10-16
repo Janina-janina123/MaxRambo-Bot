@@ -1,4 +1,4 @@
- fs = require("fs-extra");
+fs = require("fs-extra");
 const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
@@ -64,7 +64,7 @@ module.exports = {
       msg += ``;
       msg += `\n╭─────✰\n│ ♥︎╣[☞AyRa✎]╠♥︎\n╰────────────✰`; 
 
- 				const helpListImages = [ "https://i.imgur.com/Z70qVzO.jpeg" ];
+ 				const helpListImages = [ "https://i.imgur.com/jYxhhtu.jpeg" ];
 
 
       const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];
