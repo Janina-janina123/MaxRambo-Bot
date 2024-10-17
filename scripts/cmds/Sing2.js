@@ -11,7 +11,7 @@ module.exports = {
     name: "sing",
     version: "1.1.5",
     aliases: [ "music", "play"],
-    author: "dipto",
+    author: "Rambo",
     countDown: 5,
     role: 0,
     description: {
