@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "pending",
     version: "1.0",
-    author: "ARYAN",
+    author: "Max Rambo",
     countDown: 5,
     role: 2,
     shortDescription: {
