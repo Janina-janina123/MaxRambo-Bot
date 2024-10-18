@@ -1,4 +1,4 @@
--cmd install help.js fs = require("fs-extra");
+ fs = require("fs-extra");
 const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
@@ -9,7 +9,7 @@ module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "ArYan",
+    author: "Max Rambo",
     countDown: 5,
     role: 0,
     shortDescription: {
