@@ -51,9 +51,9 @@ module.exports.onReply = async function ({ api, event }) {
       const response = await axios.get(
         `${await baseApiUrl()}/baby?text=${encodeURIComponent(reply)}`,
       );
-      const ArYan = response.data.reply;
+      const ok = response.data.reply;
       await api.sendMessage(
-        ArYan,
+        ok,
         event.threadID,
         (error, info) => {
           global.GoatBot.onReply.set(info.messageID, {
@@ -87,9 +87,9 @@ module.exports.onStart = async function ({ api, args, event }) {
       const response = await axios.get(
         `${await baseApiUrl()}/baby?text=${dipto}`,
       );
-      const ArYan = response.data.reply;
+      const mg = response.data.reply;
       await api.sendMessage(
-        { body: ArYan },
+        { body: mg },
         event.threadID,
         (error, info) => {
           global.GoatBot.onReply.set(info.messageID, {
