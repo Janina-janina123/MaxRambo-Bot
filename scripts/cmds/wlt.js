@@ -115,4 +115,23 @@ const threadName = d.threadName || "Not found";
 				}
 
 				if (args[indexGetVal] == "on")
-					value =
+					value = true;
+				else if (args[indexGetVal] == "off")
+					value = false;
+
+				if (isSetNoti) {
+					config.hideNotiMessage.whiteListModeThread = !value;
+					message.reply(getLang(value ? "turnedOnNoti" : "turnedOffNoti"));
+				}
+				else {
+					config.whiteListModeThread.enable = value;
+					message.reply(getLang(value ? "turnedOn" : "turnedOff"));
+				}
+
+				writeFileSync(client.dirConfig, JSON.stringify(config, null, 2));
+				break;
+			}
+			default:
+				return message.reply(getLang("missingTIDAdd"));
+		}
+	}
